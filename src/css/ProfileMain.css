@@ -1,0 +1,253 @@
+.user-profile-div, .followers-div {
+    width: 1250px;    
+    border: 1px solid #808080;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 3px 3px 10px #808080; 
+}
+
+.coverPFF {    
+    position: relative;
+    margin-bottom: 190px;
+}
+
+.user-profile-div .follower, .user-profile-div .profilePic-border, .user-profile-div .profile-pic, .user-profile-div .following {
+    position: absolute;    
+}
+
+.user-profile-div .cover-pic {
+    width: 1248px;  
+    height: 650px;  
+    object-fit: cover;
+}
+
+.user-profile-div .profilePic-border {
+    width: 380px;  
+    height: 380px;  
+    border-radius: 50%;
+    background-color: #6200EA;
+    left: 435px;
+    bottom: -190px;
+    z-index: -1;
+}
+
+.user-profile-div .profile-pic {
+    width: 350px;  
+    height: 350px;  
+    object-fit: cover;
+    border-radius: 50%;
+    left: 450px;
+    bottom: -175px;
+}
+
+.user-profile-div .follower, .user-profile-div .following {
+    bottom: -125px;
+}
+.user-profile-div .following {
+    right: 0;
+}
+
+.user-profile-div .follower:focus, .user-profile-div .follower:active, .user-profile-div .following:focus, .user-profile-div .following:active {
+    box-shadow: none;
+}
+
+.pa-div {
+    position: relative;  
+    margin-top: 16px;
+}
+
+.user-profile-div .follower h2, .user-profile-div .following h2, .user-profile-div h1, .pa-div h2 {
+    font-size: 24px;
+}
+
+.fNum, .user-profile-div h1, .pa-div .keyPA {
+    font-weight: bold;
+}
+
+.post-nav-divider {
+    height: 5px;
+    background-color: black;
+}
+
+.post-nav i {
+    font-size: 40px;
+}
+
+.post-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 9px;
+    row-gap: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.post-div .post-pic {
+    width: 400px;  
+    height: 250px;  
+    object-fit: cover;
+}
+.post-div .single-post {
+    padding: 0px;
+}
+
+#postOperation  {
+    position: fixed;
+    top: 45%;
+    left: 47%;
+    z-index: 1;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 10px #808080; 
+}
+#postOperation i {
+    font-size: 32px;
+}
+#postOperation .view-post, #postOperation .edit-post {
+    color: #6200EA;
+}
+#postOperation .delete-post {
+    color: red;
+}
+
+@media screen and (max-width: 1260px) { 
+    .user-profile-div {
+        width: 950px;    
+    }
+    .coverPFF {   
+        margin-bottom: 145px;
+    }
+    .user-profile-div .cover-pic {
+        width: 948px;  
+        height: 494px;  
+    }
+    .user-profile-div .profilePic-border {
+        width: 288px;  
+        height: 288px;  
+        left: 331px;
+        bottom: -144px;
+    }    
+    .user-profile-div .profile-pic {
+        width: 266px;  
+        height: 266px;  
+        left: 342px;
+        bottom: -133px;
+    }
+    .user-profile-div .follower, .user-profile-div .following {
+        bottom: -95px;
+    }
+    .post-div {
+        grid-template-columns: 304px 304px 304px;
+        column-gap: 9px;
+        row-gap: 9px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }    
+    .post-div .post-pic {
+        width: 304px;  
+        height: 190px;  
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .user-profile-div {
+        width: 650px;    
+    }
+    .coverPFF {   
+        margin-bottom: 99px;
+    }
+    .user-profile-div .cover-pic {
+        width: 648px;  
+        height: 338px;  
+    }
+    .user-profile-div .profilePic-border {
+        width: 198px;  
+        height: 198px;  
+        left: 226px;
+        bottom: -99px;
+    }    
+    .user-profile-div .profile-pic {
+        width: 182px;  
+        height: 182px;  
+        left: 234px;
+        bottom: -91px;
+    }
+    .user-profile-div .follower, .user-profile-div .following {
+        bottom: -85px;
+    }
+    .user-profile-div .follower h2, .user-profile-div .following h2, .user-profile-div h1, .pa-div h2 {
+        font-size: 16px;
+    }
+    .post-nav i {
+        font-size: 32px;
+    }
+    .post-div {
+        grid-template-columns: 208px 208px 208px;
+        column-gap: 6px;
+        row-gap: 6px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }    
+    .post-div .post-pic {
+        width: 208px;  
+        height: 130px;  
+    }
+    #postOperation i {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 660px) {  
+    .user-profile-div {
+        width: 400px;    
+    }
+    .coverPFF {   
+        margin-bottom: 61px;
+    }
+    .user-profile-div .cover-pic {
+        width: 398px;  
+        height: 208px;  
+    }
+    .user-profile-div .profilePic-border {
+        width: 122px;  
+        height: 122px;  
+        left: 139px;
+        bottom: -61px;
+    }    
+    .user-profile-div .profile-pic {
+        width: 112px;  
+        height: 112px;  
+        left: 144px;
+        bottom: -56px;
+    }
+    .user-profile-div .follower, .user-profile-div .following {
+        bottom: -75px;
+    }
+    .pa-button {
+        font-size: 12px;
+    }
+    .post-nav-divider {
+        height: 3px;
+    }
+    .post-nav i {
+        font-size: 24px;
+    }
+    .post-div {
+        grid-template-columns: 128px 128px 128px;
+        column-gap: 4px;
+        row-gap: 4px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }    
+    .post-div .post-pic {
+        width: 128px;  
+        height: 80px;  
+    } 
+    #postOperation  {
+        top: 35%;
+    }
+    #postOperation i {
+        font-size: 16px;
+    }   
+}

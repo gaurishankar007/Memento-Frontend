@@ -1,0 +1,46 @@
+.setting-nav  {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+
+#admin-setting-nav {
+    justify-content: start;     
+}
+
+.setting-nav > a  {
+    text-decoration: none;
+    width: 245px;
+    padding-left: 16px;
+    padding-right: 32px;
+    font-size: 20px;
+}
+
+.setting-nav > a:hover {
+    color: white !important;
+    background-color: #6200EA !important;
+}
+
+@media screen and (max-width: 660px) {    
+    .setting-nav  {
+        height: 125px;
+        margin-bottom: 16px;
+        padding-left: 4px;
+        padding-right: 4px;
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        align-items: center;
+    }
+    
+    .setting-nav > a  {
+        width: max-content;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px #808080;
+    }
+}
